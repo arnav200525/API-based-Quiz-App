@@ -14,6 +14,8 @@ while True:
 
 diffulty = input("Difficulty = (easy/medim/hard): ")
 
+#url taken from website : https://opentdb.com/api_config.php
+#no key required while working with Open Trivia DB
 url = f"https://opentdb.com/api.php?amount={total_question}&category={catagory}&difficulty={diffulty.lower()}&type=multiple"
 re = get(url)
 
